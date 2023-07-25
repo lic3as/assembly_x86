@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuestaoCincoC", "QuestaoCincoC.vcxproj", "{072C0106-0BBC-4577-B7DA-D9A8325DAF2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{072C0106-0BBC-4577-B7DA-D9A8325DAF2E}.Debug|x64.ActiveCfg = Debug|x64
+		{072C0106-0BBC-4577-B7DA-D9A8325DAF2E}.Debug|x64.Build.0 = Debug|x64
+		{072C0106-0BBC-4577-B7DA-D9A8325DAF2E}.Debug|x86.ActiveCfg = Debug|Win32
+		{072C0106-0BBC-4577-B7DA-D9A8325DAF2E}.Debug|x86.Build.0 = Debug|Win32
+		{072C0106-0BBC-4577-B7DA-D9A8325DAF2E}.Release|x64.ActiveCfg = Release|x64
+		{072C0106-0BBC-4577-B7DA-D9A8325DAF2E}.Release|x64.Build.0 = Release|x64
+		{072C0106-0BBC-4577-B7DA-D9A8325DAF2E}.Release|x86.ActiveCfg = Release|Win32
+		{072C0106-0BBC-4577-B7DA-D9A8325DAF2E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAB04C28-7ED2-490C-B9C2-44BDCE6642FF}
+	EndGlobalSection
+EndGlobal

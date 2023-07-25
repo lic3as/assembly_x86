@@ -1,0 +1,48 @@
+; implementando a função fatorial como um procedimento
+            .686
+            .model flat,c
+            .stack 100h
+scanf       PROTO arg2:Ptr Byte, inputlist:VARARG
+printf      PROTO arg1:Ptr Byte, printlist:VARARG
+
+            .data
+in1fmt      byte "%d",0
+msg1fmt     byte "%s",0
+msg2fmt     byte 0Ah,"%s",0Ah,0
+msg3fmt     byte 0Ah,"%s%d",0Ah,0
+msg1        byte "Insira um valor: ",0
+msgerro     byte "Erro!",0
+msg2        byte "Resultado = 1",0
+msg3        byte "Resultado = ",0
+n           sdword  ?
+fat         sdword  1
+
+            .code
+main        proc
+            INVOKE printf, ADDR msg1fmt, ADDR msg1
+            INVOKE scanf, ADDR in1fmt, ADDR n
+            call fatorial
+            ret
+main        endp
+fatorial    proc
+            pushad
+            .if n < 0
+            INVOKE printf, ADDR msg2fmt, ADDR msgerro
+            .else
+            .if n == 0 || n == 1
+            INVOKE printf, ADDR msg2fmt, ADDR msg2
+            .else
+            .while n >= 2
+            mov ebx, n
+            mov eax,fat 
+            imul ebx
+            mov fat,eax
+            dec n
+            .endw
+            INVOKE printf, ADDR msg3fmt, ADDR msg3, fat
+            .endif
+            .endif
+            popad
+            ret
+fatorial    endp
+            end
